@@ -1,0 +1,24 @@
+
+.container-fluid{
+	background-color: black;
+	height: 100px;
+	
+}
+.row1{
+	background-color:rgb(23, 23, 128);
+	border: solid 3px black;
+	height:70px;
+	padding:20px;
+	text-align: center;
+}
+h1.text1{
+	font-family: 'Reggae One', cursive;
+}
+h4.text2{
+	color:white;
+}
+.midcol{
+	background-color:#eee;
+	height: 700px;
+	margin-top: 20px;
+}
