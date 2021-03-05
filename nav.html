@@ -6,6 +6,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login_style.css">
+  
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,10 +25,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item left">
-          <a class="nav-link" href="main_proj.html">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item active left">
-          <a class="nav-link" href="features.html">Features <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item left">
           <a class="nav-link left" href="#">Solutions</a>
@@ -34,47 +36,47 @@
         <li class="nav-item left">
           <a class="nav-link" href="#">Forum</a>
         </li>
+        <li class="nav-item left">
+          <a class="nav-link" onclick="openForm()" href="#">Login</a>
+
+<div class="form-popup" id="myForm">
+  <form class="form-registration">
+    <h2>Login</h2>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"><b>Password</b></label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-success btn-block">Login</button>
+    <p class="message">Not Registered? <a href="registration.html" >Register</a></p>
+    <button type="button" class="bttn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
       </ul>
     </div>
 
   </nav>
   <div class="container">
-  <div class="row_1">
-  <div class="card mb-3">
-  <img class="card-img-top" src="bg.jpg" alt="Card image cap" style="height:200px;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-  </div>
-</div>
-  <div class="card-deck">
-    <div class="card">
-      <img class="card-img-top" src="bg.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="bg.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="bg.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-  </div>
+
   </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
