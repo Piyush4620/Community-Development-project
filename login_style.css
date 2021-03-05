@@ -21,13 +21,13 @@ box-shadow: 2px 3px 41px 28px rgba(0,0,0,0.75);
 
 /* Set a style for the submit/login button */
 .form-registration{
-  color: white;
+  background-color: #fff;
+  color: #0c5460;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
-  opacity: 0.8;
 }
 .Login-form{
   background-color: #fff;
