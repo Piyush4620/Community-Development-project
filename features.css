@@ -93,7 +93,8 @@
   text-align: right;
 }
 .blog-card .description .read-more a {
-  color: #5ad67d;
+  color: #fed136;
+  font-weight: bold;
   display: inline-block;
   position: relative;
 }
@@ -120,7 +121,7 @@
   content: "";
   position: absolute;
   height: 5px;
-  background: #5ad67d;
+  background: #fed136;
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
