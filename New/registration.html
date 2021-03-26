@@ -83,12 +83,18 @@
         <!-- End About Us Section -->
         
         <!-- registration section -->
-        <div class="container signin">
+        <div class="container register">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-12 col-sm-12 col-lg-12 columnlogin">
         <main class="form-register">
           <form>
-            <img class="mb-4" src="assets/img/favicon.png" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Please Register</h1>
-            <h5 class="mb-3 fw-normal">Register if you are related to cyber security field. Your contribution will help us a lot.</h5>
+            <div class="row row1 justify-content-center"> 
+              <img class="mb-4" src="assets/img/favicon.png" alt="" width="72" height="57">
+            </div>
+            <div class="row justify-content-center">
+              <h1 class="h3 mb-3 fw-normal">Please Register</h1>
+            </div>
+           <h5 class="mb-3 fw-normal">Register if you are related to cyber security field. Your contribution will help us a lot.</h5>
 
             <div class="row row1 g-3">
                 <div class="col-md-4 col-lg-4 col-sm-6">
@@ -124,6 +130,41 @@
                   <input type="password" id="inputPassword" class="form-control" placeholder="Confirm Password" required>
                 </div>  
                 </div>
+
+                <div class="row row1 g-3">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                  <label for="Certificate" class="visually-hidden">Certificate / Company Name (Related to cyber security)</label>
+                  <input type="Certificate" id="Ceertificate" class="form-control" placeholder="Certificate / name of organisation" required>
+                </div>  
+                </div>
+
+                <div class="row row1 g-3">
+                  <div class="col-md-12 col-lg-12 col-sm-12">
+                  <form action="/action_page.php">
+                    <p>Please upload Certificate / Employee ID</p>
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    
+                    <p>Default file:</p>
+                    <input type="file" id="myFile" name="filename2">
+                  
+                  </form>
+                </div>
+                </div>
+                
+                <script>
+                // Add the following code if you want the name of the file appear on select
+                $(".custom-file-input").on("change", function() {
+                  var fileName = $(this).val().split("\\").pop();
+                  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                });
+                </script>
+                
+
+                
+
                <div class="row row1 g-3">
                 <div class="col-12">
                   <div class="form-check">
@@ -135,16 +176,19 @@
                   </div>
                 </div>
                </div>
+
               
-               <div class="row row1 g-3">
-                <div class='col-12'>
-                  <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
-                </div>
+               <div class="row row1 g-3 justify-content-center">
+                <!-- <div class='col-12'> -->
+                  <button class="w-25 btn btn-lg btn-primary" type="submit">Register</button>
+                <!-- </div> -->
                </div>
               
             </div>
             </form>
         </main>
+      </div>
+      </div>
         </div>
        
         <!-- end of registration section -->
