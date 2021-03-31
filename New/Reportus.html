@@ -38,25 +38,25 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+   <!-- ======= Header ======= -->
+   <header id="header" class="fixed-top">
     <div class="container">
-
       <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>The Phishing mutiny</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+        <h1>
+        <a href="index.html"><img src="assets/img/mlogo.png" alt="" class="img-fluid"></a>
 
+        <a class="text-light" href="index.html"><span>Mutiny</span></a>
+      </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+      </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="Forum.html">Forum</a></li>
           <li class="active"><a href="Reportus.html">Report</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -86,36 +86,122 @@
       <div class="container">
 
         <div class="row">
-
-          <!-- <div class="col-lg-6">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
+          <div class="container register">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-12 col-sm-12 col-lg-12 columnlogin">
+          <main class="form-register">
+            <form>
+              <div class="row row1 justify-content-center"> 
+                <img class="mb-4" src="assets/img/favicon.png" alt="" width="72" height="57">
               </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
-                </div>
+              <div class="row justify-content-center">
+                <h1 class="h3 mb-3 fw-normal">Report us</h1>
               </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+             <h5 class="mb-3 fw-normal">Report us Anonymously</h5>
+  
+              <div class="row row1 g-3">
+                  <div class="col-md-4 col-lg-4 col-sm-6">
+                  <label for="date" class="visually-hidden">Date of incident</label>
+                  <input type="date" id="date" class="form-control" placeholder="Date" required autofocus>    
+                   </div>
+                <div class="col-md-4 col-lg-4 col-sm-6">
+                  <label for="time" class="visually-hidden">Time</label>
+                  <input type="time" id="time" class="form-control" placeholder="Time" required autofocus>
                 </div>
+                <!-- <div class="col-md-4 col-lg-4">
+                  <label for="inputuname" class="visually-hidden">User Name</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="Username" id="inputuname" class="form-control" placeholder="User Name" required autofocus>
+                  </div>
+                </div> -->
               </div>
-            </div>
+                <div class="row row1 g-3">
+                <div class="col-lg-12 col-md-12 col-md-12">
+                  <label for="reason" class="visually-hidden">Reason for delay in report</label>
+                  <input type="text" id="inputEmail" class="form-control" placeholder="Reason" required autofocus>
+                </div>
+                </div>
+  
+                  <div class="row row1 g-3">
+                    <!-- <div class="col-md-6 col-lg-6 col-sm-6">
+                      <label for="state/ut" class="visually-hidden">Country</label>
+                      <input type="place" id="inputPassword" class="form-control" placeholder="Country" required>
+                   </div> -->
+                  <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label for="inputPassword" class="visually-hidden">State</label>
+                    <input type="place" id="inputPassword" class="form-control" placeholder="State" required>
+                  </div>  
+                  </div>
+                  <div class="row row1 g-3">
+                    <div class="col-md-6 col-lg-6 col-sm-6">
+                      <label for="state/ut" class="visually-hidden">District</label>
+                      <input type="place" id="inputPassword" class="form-control" placeholder="District" required>
+                   </div>
+                  <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label for="inputPassword" class="visually-hidden">Police-Station.</label>
+                    <input type="place" id="inputPassword" class="form-control" placeholder="Station" required>
+                  </div>  
+                  </div>
+  
+                  <div class="row row1 g-3">
+                  <div class="col-md-12 col-lg-12 col-sm-12">
+                    <label for="Certificate" class="visually-hidden">Where did the incident occur?</label>
+                    <input type="text" id="Ceertificate" class="form-control" placeholder="Location" required>
+                  </div>  
+                  </div>
+  
+                  <div class="row row1 g-3">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                    <form action="/action_page.php">
+                      <p>Please upload photo or screenshot / any proof you have.</p>
+                      <div class="custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="customFile" name="filename">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div>
+                      
+                      <p>Default file:</p>
+                      <input type="file" id="myFile" name="filename2">
+                    
+                    </form>
+                  </div>
+                  </div>
 
-          </div> -->
+                  <div class="row row1 g-3">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                    <p>Please provide any additional information about the incident.</p>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="additinal information" placeholder="Additional information"></textarea>
+                <div class="validate"></div>
+              </div>
+                    </div>
+                  
+                  <script>
+                  // Add the following code if you want the name of the file appear on select
+                  $(".custom-file-input").on("change", function() {
+                    var fileName = $(this).val().split("\\").pop();
+                    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                  });
+                  </script>
+  
+                <div><br></div>
+                 <div class="row row1 g-3 justify-content-center">
+                  <!-- <div class='col-12'> -->
+                    <button class="w-25 btn btn-lg btn-primary" type="submit">Report</button>
+                  <!-- </div> -->
+                 </div>
+                
+              </div>
+              </form>
+          </main>
+        </div>
+        </div>
+          </div>
+         
+          <!-- end of registration section -->
+  
+  
 
-          <div class="col-lg-8 mx-auto">
+          <!-- <div class="col-lg-8 mx-auto">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
@@ -142,7 +228,7 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div>
+          </div> -->
 
         </div>
 
@@ -159,92 +245,56 @@
     <!-- End Map Section -->
 
   </main><!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Mutiny</h3>
-            <p>Our team is active towards the </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+  <div class="footer-top">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Forum</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Report Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Report Us</h4>
+            <p>Report a complaint about any spam messages</p>
+            <a href="#main" class="input">Report Us</a>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 footer-info">
+          <h3>About The Phishing Mutiny</h3>
+          <p>To aware all people including the indigent ones about the social engineering threats and cyber attacks especially phishing.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Mutiny</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by Mutiny</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
